@@ -17,7 +17,7 @@ dev package:
 - [X] nodemon
 
 ```bash
-npm i nodemon -D
+npm i -D nodemon @babel/core @babel/cli @babel/node @babel/preset-env
 ```
 
 settings nodemom:  
