@@ -1,15 +1,16 @@
 const router = require('express').Router();
 
-router.get('/', (req, res) => {
-  res.send('Hello World');
+router.get('/', function (req, res) {
+  // pendiente por configurar
+  res.render('../views/partials/index.hbs');
 })
 
-router.get('/about', (req, res) => {
-  res.send('About section');
+router.get('/about', function (req, res) {
+  res.render('../views/partials/about.hbs');
 })
 
 router.get('/Contact', (req, res) => {
-  res.send('Contact section');
+  res.render('contact');
 })
 
 module.exports = router;
