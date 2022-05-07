@@ -17,7 +17,21 @@ dev package:
 - [X] nodemon
 
 ```bash
-npm i nodemon
+npm i nodemon -D
+```
+
+settings nodemom:  
+
+```json
+"scripts": {
+  "dev": "nodemon src/server.js"
+}
+```
+
+run with npm :  
+
+```bash
+npm run dev
 ```
 
 create structure:  
@@ -28,8 +42,14 @@ src:
   - helpers
   - models
   - public 
-  - routes
-  - views
+  - routes:
+      - index.js
+      - users.js
+      - notes.js
+  - views:
+      - layouts
+      - partials
+
 ```
 
 ```bash
